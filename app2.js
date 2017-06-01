@@ -31,13 +31,14 @@ window.onload = () =>{
 	function showContent(data) {
 		container.style.height = '100%';
 		var keys = Object.keys(data.query.pages);
-		var html = '<div class="row"><span id="secondaryMag" class="fa fa-search fa-2x"></span><input class="text-primary" id="secondaryInput" autocomplete="off" autofocus>'
+		var html = '<div class="row"><span id="secondaryMag" class="fa fa-search fa-2x"></span><input class="text-primary" id="secondaryInput" autocomplete="off">'
 		for (var i = 0; i < keys.length; i++){
 			html += `<a href='https://en.wikipedia.org/?curid=${keys[i]}'><div class='col-lg-12'><h3>${data.query.pages[`${Number(keys[i])}`].title}</h3><h5>${data.query.pages[`${Number(keys[i])}`].extract}</h5></div></a>`;
 		}
 		html += '</div>'
 		containerFluid.innerHTML =  html;
 		input = document.querySelector('input');
+		input.focus();
 	}
 
 
