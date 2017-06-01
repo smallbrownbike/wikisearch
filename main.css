@@ -13,7 +13,7 @@ body {
 	height: 35%;
 }
 
-input{
+#mainInput{
 	text-indent: 50px;
 	width: 100%;
 	box-shadow: none;
@@ -23,12 +23,31 @@ input{
 	font-size: 2em;
 }
 
-.fa-search { 
+#secondaryInput{
+	margin-top: 10px;
+	text-indent: 50px;
+	width: 100%;
+	box-shadow: none;
+	outline: none;
+	border: 1px solid lightgrey;
+	border-radius: 25px;
+	font-size: 2em;
+}
+
+#mainMag { 
   position: absolute;
   top: 77px;
   left: 45px;
-	font-size: 4em;
+	font-size: 2em;
 }
+
+#secondaryMag { 
+  position: absolute;
+  top: 18px;
+  left: 30px;
+	font-size: 2em;
+}
+
 
 .random{
 	margin: 8px;
