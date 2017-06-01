@@ -1,0 +1,51 @@
+body {
+	background-color: #f6f6f6;
+}
+
+.container{
+	position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 600px;
+	height: 35%;
+}
+
+input{
+	text-indent: 50px;
+	width: 100%;
+	box-shadow: none;
+	outline: none;
+	border: 1px solid lightgrey;
+	border-radius: 25px;
+	font-size: 2em;
+}
+
+.fa-search { 
+  position: absolute;
+  top: 77px;
+  left: 45px;
+	font-size: 4em;
+}
+
+.random{
+	margin: 8px;
+}
+
+h5{
+	color: black;
+}
+
+.col-lg-12 {
+	border-bottom: 1px solid white;
+}
+
+.btn{
+	margin: 10px;
+}
+
+a:hover{
+	text-decoration: none;
+}
