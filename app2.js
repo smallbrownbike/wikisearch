@@ -32,7 +32,7 @@ window.onload = () =>{
 		
 		container.style.height = '100%';
 		var keys = Object.keys(data.query.pages);
-		var html = '<div class="row"><div id="magContainer" class="dropdown"><div class="dropdown-toggle" data-toggle="dropdown"><span id="secondaryMag" class="fa fa-search fa-2x"></span><span class="caret"></span></div><ul class="dropdown-menu" aria-labelledby="dropdownMenu1"><li id="wikipedia" class="active"><a class="wikiLinks">Wikipedia</a></li><li id="wikiwand"><a class="wikiLinks">Wikiwand</a></li></ul></div><input class="text-primary" id="secondaryInput" autocomplete="off">'
+		var html = '<div class="row"><div id="magContainer" class="dropdown"><div href="#" data-toggle="dropdown" class="dropdown-toggle" role="button"><span id="secondaryMag" class="fa fa-search fa-2x"></span><span class="caret"></span></div><ul class="dropdown-menu" aria-labelledby="dropdownMenu1"><li id="wikipedia" class="active"><a class="wikiLinks">Wikipedia</a></li><li id="wikiwand"><a class="wikiLinks">Wikiwand</a></li></ul></div><input class="text-primary" id="secondaryInput" autocomplete="off">'
 		for (var i = 0; i < keys.length; i++){
 			
 			html += `<a id="links" href='https://en.wikipedia.org/?curid=${keys[i]}'><div class='col-lg-12'><h3>${data.query.pages[`${Number(keys[i])}`].title}</h3><h5>${data.query.pages[`${Number(keys[i])}`].extract}</h5></div></a>`;
