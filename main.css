@@ -25,7 +25,7 @@ body {
 
 #secondaryInput{
 	margin-top: 10px;
-	text-indent: 50px;
+	text-indent: 60px;
 	width: 100%;
 	box-shadow: none;
 	outline: none;
@@ -34,17 +34,24 @@ body {
 	font-size: 2em;
 }
 
-#mainMag { 
+#mainMag {
   position: absolute;
   top: 77px;
   left: 45px;
 	font-size: 2em;
 }
 
+#magContainer{
+	position: absolute;
+	top: 18px;
+	left: 30px;
+}
+
+.wikiLinks{
+	cursor: pointer;
+}
+
 #secondaryMag { 
-  position: absolute;
-  top: 18px;
-  left: 30px;
 	font-size: 2em;
 }
 
@@ -67,4 +74,8 @@ h5{
 
 a:hover{
 	text-decoration: none;
+}
+
+.dropdown{
+
 }
